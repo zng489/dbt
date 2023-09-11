@@ -1,0 +1,8 @@
+version: 2
+
+seeds:
+  - name: uf_mun
+    columns:
+      - name: country_code
+        tests:
+        - not_null

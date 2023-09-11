@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "postgres"."postgres"."uf_mun";
+    -- dbt seed --
+    
+          insert into "postgres"."postgres"."uf_mun" ("country_code", "country_name") values
+          (%s,%s),(%s,%s),(%s,%s)
+      
+
+;
+  

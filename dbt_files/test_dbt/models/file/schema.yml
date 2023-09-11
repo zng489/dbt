@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: dbt_file
+    columns:
+    - name: country_code
+
+
+
+
+#sources:
+#  - name: dbt_file
+#    description: database running
+#    database: postgres
+#    schema: public
+#    tables:
+#      - name: 
+      #  columns:
+      #    - name: id
+          
+          #  tests:
+          #    - unique
+          #    - not_null
+          #- name: name
+          #  tests:
+          #    - not_null
+      #- name: customers
+
+  #- name: stripe
+  #  tables:
+  #    - name: payments
