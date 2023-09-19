@@ -1,0 +1,77 @@
+test_dbt:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 1 #[1 or more]
+      host: localhost #[host]
+      port: 5433 #[port]
+      user: postgres #[dev_username]
+      pass: '123' #[dev_password]
+      dbname: postgres #[dbname]
+      schema: postgres #[dev_schema]
+
+    prod:
+      type: postgres
+      threads: 1 #[1 or more]
+      host: localhost #[host]
+      port: 5433 #[port]
+      user: postgres #[dev_username]
+      pass: '123' #[dev_password]
+      dbname: postgres #[dbname]
+      schema: postgres #[dev_schema]
+
+  target: dev
+
+sql_jinja:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 1 #[1 or more]
+      host: localhost #[host]
+      port: 5433 #[port]
+      user: postgres #[dev_username]
+      pass: '123' #[dev_password]
+      dbname: postgres #[dbname]
+      schema: postgres #[dev_schema]
+
+    prod:
+      type: postgres
+      threads: 1 #[1 or more]
+      host: localhost #[host]
+      port: 5433 #[port]
+      user: postgres #[dev_username]
+      pass: '123' #[dev_password]
+      dbname: postgres #[dbname]
+      schema: postgres #[dev_schema]
+
+  target: dev
+
+
+rais:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 1 #[1 or more]
+      host: localhost #[host]
+      port: 5433 #[port]
+      user: postgres #[dev_username]
+      pass: '123' #[dev_password]
+      dbname: postgres #[dbname]
+      schema: postgres #[dev_schema]
+
+    prod:
+      type: postgres
+      threads: 1 #[1 or more]
+      host: localhost #[host]
+      port: 5433 #[port]
+      user: postgres #[dev_username]
+      pass: '123' #[dev_password]
+      dbname: postgres #[dbname]
+      schema: postgres #[dev_schema]
+
+  target: dev
+
+  target: dev

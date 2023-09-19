@@ -1,0 +1,8 @@
+version: 2
+
+seeds:
+  - name: postal-code-germany
+#    columns:
+#      - name: country_code
+#        tests:
+#        - not_null
