@@ -1,0 +1,63 @@
+[0m11:49:41.434821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8DCFBA640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8E1877520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8E18772E0>]}
+
+
+============================== 11:49:41.439182 | 7a08ad28-1ca0-451d-9529-b0d19e0a8d98 ==============================
+[0m11:49:41.439182 [info ] [MainThread]: Running with dbt=1.6.1
+[0m11:49:41.441138 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init rais', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:49:41.444152 [debug] [MainThread]: Starter project path: C:\Users\PC\miniconda3\envs\myenv\lib\site-packages\dbt\include\starter_project
+[0m11:49:41.462262 [info ] [MainThread]: 
+Your new dbt project "rais" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:49:41.465261 [info ] [MainThread]: Setting up your profile.
+[0m11:49:47.796555 [debug] [MainThread]: Command `dbt init` succeeded at 11:49:47.796555 after 6.38 seconds
+[0m11:49:47.796555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8DCFBA640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8DF05B9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8DEF07A90>]}
+[0m11:49:47.797743 [debug] [MainThread]: Flushing usage events
+[0m11:49:48.480377 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m11:51:11.630742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE250BC460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE299494C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE29949280>]}
+
+
+============================== 11:51:11.634741 | 076b9cb4-8b13-4700-9b26-da14922a1917 ==============================
+[0m11:51:11.634741 [info ] [MainThread]: Running with dbt=1.6.1
+[0m11:51:11.635740 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:51:11.636785 [info ] [MainThread]: dbt version: 1.6.1
+[0m11:51:11.637909 [info ] [MainThread]: python version: 3.9.16
+[0m11:51:11.638964 [info ] [MainThread]: python path: C:\Users\PC\miniconda3\envs\myenv\python.exe
+[0m11:51:11.639908 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m11:51:11.706720 [info ] [MainThread]: Using profiles dir at C:\Users\PC\.dbt
+[0m11:51:11.708881 [info ] [MainThread]: Using profiles.yml file at C:\Users\PC\.dbt\profiles.yml
+[0m11:51:11.709885 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\PC\Desktop\dbt\dbt_rais\dbt_project.yml
+[0m11:51:11.710885 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m11:51:11.712886 [debug] [MainThread]: Command `dbt debug` failed at 11:51:11.712886 after 0.10 seconds
+[0m11:51:11.713885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE250BC460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE29A34D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE29949D00>]}
+[0m11:51:11.713885 [debug] [MainThread]: Flushing usage events
+[0m11:51:12.085721 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:03:33.964697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A46C6CFA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A4B50A610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A4B50A3D0>]}
+
+
+============================== 14:03:33.969698 | 374bfebc-f51a-402f-9945-95fdc704fd7f ==============================
+[0m14:03:33.969698 [info ] [MainThread]: Running with dbt=1.6.1
+[0m14:03:33.970843 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed -s rais', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:03:33.970843 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\PC\Desktop\dbt\dbt_rais\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:03:33.972845 [debug] [MainThread]: Command `dbt seed` failed at 14:03:33.972845 after 0.02 seconds
+[0m14:03:33.972845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A46C6CFA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A4B4F58B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A4B50A760>]}
+[0m14:03:33.973843 [debug] [MainThread]: Flushing usage events
+[0m14:03:33.979886 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
