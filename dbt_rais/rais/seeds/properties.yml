@@ -1,0 +1,8 @@
+version: 2
+
+seeds:
+  - name: rais
+#    columns:
+#      - name: country_code
+#        tests:
+#        - not_null
