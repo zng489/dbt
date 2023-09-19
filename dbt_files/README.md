@@ -1,12 +1,16 @@
-1-
-pip install <name_of_project>
+1- 
 pip install dbt-postgres
 
 2-
-dbt init
+dbt init <name_of_project>
 C:\Users\PC\.dbt\profiles.yml
 
 3-
+Using profiles.yml file at C:\Users\PC\.dbt\profiles.yml
+
+Take care 
+Using dbt_project.yml file at C:\Users\PC\Desktop\dbt\dbt\dbt\dbt_files\test_dbt\dbt_project.yml
+
 dbt debug
 
 4- 
@@ -69,6 +73,30 @@ test_dbt:
 
   target: dev
 
+sql_jinja:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 1 #[1 or more]
+      host: localhost #[host]
+      port: 5433 #[port]
+      user: postgres #[dev_username]
+      pass: '123' #[dev_password]
+      dbname: postgres #[dbname]
+      schema: postgres #[dev_schema]
+
+    prod:
+      type: postgres
+      threads: 1 #[1 or more]
+      host: localhost #[host]
+      port: 5433 #[port]
+      user: postgres #[dev_username]
+      pass: '123' #[dev_password]
+      dbname: postgres #[dbname]
+      schema: postgres #[dev_schema]
+
+  target: dev
 9-
 seeds
 properties.yml
