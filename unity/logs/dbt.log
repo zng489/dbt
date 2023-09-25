@@ -1,0 +1,425 @@
+[0m16:37:32.000731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235820EA640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235869A75B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235869A7370>]}
+
+
+============================== 16:37:32.004731 | 9dbca445-0c09-44e0-ab03-d7d46d4de6a6 ==============================
+[0m16:37:32.004731 [info ] [MainThread]: Running with dbt=1.6.1
+[0m16:37:32.005732 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\PC\\Desktop\\dbt\\unity\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:37:32.006781 [info ] [MainThread]: dbt version: 1.6.1
+[0m16:37:32.007730 [info ] [MainThread]: python version: 3.9.16
+[0m16:37:32.008730 [info ] [MainThread]: python path: C:\Users\PC\miniconda3\envs\myenv\python.exe
+[0m16:37:32.009732 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m16:37:33.193776 [info ] [MainThread]: Using profiles dir at C:\Users\PC\.dbt
+[0m16:37:33.194754 [info ] [MainThread]: Using profiles.yml file at C:\Users\PC\.dbt\profiles.yml
+[0m16:37:33.195740 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\PC\Desktop\dbt\unity\dbt_project.yml
+[0m16:37:33.220743 [info ] [MainThread]: Configuration:
+[0m16:37:33.221731 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m16:37:33.222735 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:37:33.224733 [info ] [MainThread]: Required dependencies:
+[0m16:37:33.225736 [debug] [MainThread]: Executing "git --help"
+[0m16:37:33.277765 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:37:33.277765 [debug] [MainThread]: STDERR: "b''"
+[0m16:37:33.278775 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:37:33.279774 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m16:37:33.280814 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:37:33.281817 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  at path ['threads']: 'default' is not of type 'integer'
+
+
+[0m16:37:33.284780 [debug] [MainThread]: Command `dbt debug` failed at 16:37:33.284780 after 1.30 seconds
+[0m16:37:33.284780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235820EA640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002359799E100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235869A7280>]}
+[0m16:37:33.285815 [debug] [MainThread]: Flushing usage events
+[0m16:37:33.679030 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m16:37:50.732783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233A90CB400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233AD957580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233AD957340>]}
+
+
+============================== 16:37:50.736783 | 661bb416-4d6a-4d41-a0fd-4bd6218806ab ==============================
+[0m16:37:50.736783 [info ] [MainThread]: Running with dbt=1.6.1
+[0m16:37:50.737787 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\PC\\Desktop\\dbt\\unity\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:37:50.738785 [info ] [MainThread]: dbt version: 1.6.1
+[0m16:37:50.739789 [info ] [MainThread]: python version: 3.9.16
+[0m16:37:50.740785 [info ] [MainThread]: python path: C:\Users\PC\miniconda3\envs\myenv\python.exe
+[0m16:37:50.741784 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m16:37:51.897825 [info ] [MainThread]: Using profiles dir at C:\Users\PC\.dbt
+[0m16:37:51.898783 [info ] [MainThread]: Using profiles.yml file at C:\Users\PC\.dbt\profiles.yml
+[0m16:37:51.899784 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\PC\Desktop\dbt\unity\dbt_project.yml
+[0m16:37:51.900785 [info ] [MainThread]: adapter type: databricks
+[0m16:37:51.901786 [info ] [MainThread]: adapter version: 1.6.4
+[0m16:37:51.924826 [info ] [MainThread]: Configuration:
+[0m16:37:51.926785 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:37:51.927787 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:37:51.928785 [info ] [MainThread]: Required dependencies:
+[0m16:37:51.929784 [debug] [MainThread]: Executing "git --help"
+[0m16:37:51.976834 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:37:51.977891 [debug] [MainThread]: STDERR: "b''"
+[0m16:37:51.977891 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:37:51.979872 [info ] [MainThread]: Connection:
+[0m16:37:51.979872 [info ] [MainThread]:   host: adb-6523536500265509.9.azuredatabricks.net
+[0m16:37:51.981835 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/5eeec6f85950ced2
+[0m16:37:51.982837 [info ] [MainThread]:   schema: default
+[0m16:37:51.983834 [info ] [MainThread]: Registered adapter: databricks=1.6.4
+[0m16:37:51.984835 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m16:37:51.985836 [debug] [MainThread]: Using databricks connection "debug"
+[0m16:37:51.985836 [debug] [MainThread]: On debug: select 1 as id
+[0m16:37:51.986833 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:37:53.143999 [debug] [MainThread]: SQL status: OK in 1.159999966621399 seconds
+[0m16:37:53.145998 [debug] [MainThread]: On debug: Close
+[0m16:37:53.354077 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:37:53.357041 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:37:53.359041 [debug] [MainThread]: Command `dbt debug` succeeded at 16:37:53.359041 after 2.64 seconds
+[0m16:37:53.361037 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:37:53.363037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233A90CB400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233AD9A7280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233BE98A670>]}
+[0m16:37:53.364039 [debug] [MainThread]: Flushing usage events
+[0m16:37:53.715303 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m16:46:01.918830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D75ED0A640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7635C75B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7635C7340>]}
+
+
+============================== 16:46:01.922873 | 9fff5b01-30bf-43e3-81a5-e715ef31e519 ==============================
+[0m16:46:01.922873 [info ] [MainThread]: Running with dbt=1.6.1
+[0m16:46:01.923832 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\PC\\Desktop\\dbt\\unity\\logs', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:46:01.924832 [info ] [MainThread]: dbt version: 1.6.1
+[0m16:46:01.925831 [info ] [MainThread]: python version: 3.9.16
+[0m16:46:01.926833 [info ] [MainThread]: python path: C:\Users\PC\miniconda3\envs\myenv\python.exe
+[0m16:46:01.927833 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m16:46:03.092298 [info ] [MainThread]: Using profiles dir at C:\Users\PC\.dbt
+[0m16:46:03.094302 [info ] [MainThread]: Using profiles.yml file at C:\Users\PC\.dbt\profiles.yml
+[0m16:46:03.094302 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\PC\Desktop\dbt\unity\dbt_project.yml
+[0m16:46:03.095339 [info ] [MainThread]: adapter type: databricks
+[0m16:46:03.096302 [info ] [MainThread]: adapter version: 1.6.4
+[0m16:46:03.119301 [info ] [MainThread]: Configuration:
+[0m16:46:03.121303 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:46:03.122304 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:46:03.124308 [info ] [MainThread]: Required dependencies:
+[0m16:46:03.125301 [debug] [MainThread]: Executing "git --help"
+[0m16:46:03.171358 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:46:03.172300 [debug] [MainThread]: STDERR: "b''"
+[0m16:46:03.172300 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:46:03.174302 [info ] [MainThread]: Connection:
+[0m16:46:03.174302 [info ] [MainThread]:   host: adb-6523536500265509.9.azuredatabricks.net
+[0m16:46:03.175335 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/5eeec6f85950ced2
+[0m16:46:03.177303 [info ] [MainThread]:   catalog: hive_metastore
+[0m16:46:03.178303 [info ] [MainThread]:   schema: landing
+[0m16:46:03.179301 [info ] [MainThread]: Registered adapter: databricks=1.6.4
+[0m16:46:03.180303 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m16:46:03.181348 [debug] [MainThread]: Using databricks connection "debug"
+[0m16:46:03.181348 [debug] [MainThread]: On debug: select 1 as id
+[0m16:46:03.182340 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:46:04.119940 [debug] [MainThread]: SQL status: OK in 0.9399999976158142 seconds
+[0m16:46:04.120941 [debug] [MainThread]: On debug: Close
+[0m16:46:04.312842 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:46:04.316848 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:46:04.322891 [debug] [MainThread]: Command `dbt debug` succeeded at 16:46:04.321842 after 2.42 seconds
+[0m16:46:04.324893 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:46:04.326832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D75ED0A640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7745AC6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D75E4FE160>]}
+[0m16:46:04.328877 [debug] [MainThread]: Flushing usage events
+[0m16:46:04.746407 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m16:53:30.958384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2DA0CA640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2DE988BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2DE988A30>]}
+
+
+============================== 16:53:30.962382 | 559c0ee2-e5ec-4410-ac2f-dadf41dc738e ==============================
+[0m16:53:30.962382 [info ] [MainThread]: Running with dbt=1.6.1
+[0m16:53:30.964387 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\PC\\Desktop\\dbt\\unity\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt test --models unity_dbt.*', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:53:32.329923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '559c0ee2-e5ec-4410-ac2f-dadf41dc738e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2DE975E50>]}
+[0m16:53:32.343952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '559c0ee2-e5ec-4410-ac2f-dadf41dc738e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2EF9E80A0>]}
+[0m16:53:32.344949 [info ] [MainThread]: Registered adapter: databricks=1.6.4
+[0m16:53:32.358982 [debug] [MainThread]: checksum: efe19d9f5b93d1a98cc804fbfcdb6b3aced98b974af664946fee1cde8837deb7, vars: {}, profile: , target: , version: 1.6.1
+[0m16:53:32.361924 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:53:32.362923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '559c0ee2-e5ec-4410-ac2f-dadf41dc738e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2EF9A4400>]}
+[0m16:53:33.938696 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'teste' in the 'models' section of file 'models\unity_dbt\schema.yml'
+[0m16:53:33.988733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '559c0ee2-e5ec-4410-ac2f-dadf41dc738e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2EFCE50D0>]}
+[0m16:53:34.013337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '559c0ee2-e5ec-4410-ac2f-dadf41dc738e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2EFC64A90>]}
+[0m16:53:34.014340 [info ] [MainThread]: Found 3 models, 4 tests, 0 sources, 0 exposures, 0 metrics, 471 macros, 0 groups, 0 semantic models
+[0m16:53:34.016340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '559c0ee2-e5ec-4410-ac2f-dadf41dc738e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2EFC07C40>]}
+[0m16:53:34.017379 [info ] [MainThread]: 
+[0m16:53:34.018595 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:53:34.019605 [debug] [MainThread]: Command end result
+[0m16:53:34.031384 [debug] [MainThread]: Command `dbt test` succeeded at 16:53:34.031384 after 3.09 seconds
+[0m16:53:34.032429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2DA0CA640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2EF9722B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2EFC35EE0>]}
+[0m16:53:34.033384 [debug] [MainThread]: Flushing usage events
+[0m16:53:34.429049 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m16:54:35.921986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000179CF59A640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000179D3E68C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000179D3E68A60>]}
+
+
+============================== 16:54:35.926023 | 5992e0e6-7cd2-4785-ad42-f571b43b8527 ==============================
+[0m16:54:35.926023 [info ] [MainThread]: Running with dbt=1.6.1
+[0m16:54:35.926988 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\PC\\Desktop\\dbt\\unity\\logs', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --models unity_dbt.*', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:54:37.164985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5992e0e6-7cd2-4785-ad42-f571b43b8527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000179D3E57B50>]}
+[0m16:54:37.182025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5992e0e6-7cd2-4785-ad42-f571b43b8527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000179E4EC7100>]}
+[0m16:54:37.183988 [info ] [MainThread]: Registered adapter: databricks=1.6.4
+[0m16:54:37.200988 [debug] [MainThread]: checksum: efe19d9f5b93d1a98cc804fbfcdb6b3aced98b974af664946fee1cde8837deb7, vars: {}, profile: , target: , version: 1.6.1
+[0m16:54:37.307988 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:54:37.308987 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:54:37.317016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5992e0e6-7cd2-4785-ad42-f571b43b8527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000179E50B6F40>]}
+[0m16:54:37.333931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5992e0e6-7cd2-4785-ad42-f571b43b8527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000179E4FC5850>]}
+[0m16:54:37.334969 [info ] [MainThread]: Found 3 models, 4 tests, 0 sources, 0 exposures, 0 metrics, 471 macros, 0 groups, 0 semantic models
+[0m16:54:37.335867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5992e0e6-7cd2-4785-ad42-f571b43b8527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000179E4FC59D0>]}
+[0m16:54:37.337882 [info ] [MainThread]: 
+[0m16:54:37.338879 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m16:54:37.340877 [debug] [ThreadPool]: Acquiring new databricks connection 'list_hive_metastore'
+[0m16:54:37.341878 [debug] [ThreadPool]: Using databricks connection "list_hive_metastore"
+[0m16:54:37.342878 [debug] [ThreadPool]: On list_hive_metastore: GetSchemas(database=`hive_metastore`, schema=None)
+[0m16:54:37.342878 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:54:38.436991 [debug] [ThreadPool]: SQL status: OK in 1.090000033378601 seconds
+[0m16:54:38.461665 [debug] [ThreadPool]: On list_hive_metastore: Close
+[0m16:54:38.714432 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_hive_metastore, now create_hive_metastore_landing)
+[0m16:54:38.716431 [debug] [ThreadPool]: Creating schema "database: "hive_metastore"
+schema: "landing"
+"
+[0m16:54:38.729425 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m16:54:38.730426 [debug] [ThreadPool]: Using databricks connection "create_hive_metastore_landing"
+[0m16:54:38.730426 [debug] [ThreadPool]: On create_hive_metastore_landing: /* {"app": "dbt", "dbt_version": "1.6.1", "dbt_databricks_version": "1.6.4", "databricks_sql_connector_version": "2.9.3", "profile_name": "unity", "target_name": "dev", "connection_name": "create_hive_metastore_landing"} */
+create schema if not exists `hive_metastore`.`landing`
+  
+[0m16:54:38.731460 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:54:39.862921 [debug] [ThreadPool]: Databricks adapter: Error while running:
+/* {"app": "dbt", "dbt_version": "1.6.1", "dbt_databricks_version": "1.6.4", "databricks_sql_connector_version": "2.9.3", "profile_name": "unity", "target_name": "dev", "connection_name": "create_hive_metastore_landing"} */
+create schema if not exists `hive_metastore`.`landing`
+  
+[0m16:54:39.865922 [debug] [ThreadPool]: Databricks adapter: <class 'databricks.sql.exc.ServerOperationError'>: [INSUFFICIENT_PERMISSIONS] Insufficient privileges:
+User does not have permission CREATE on CATALOG.
+[0m16:54:39.869921 [debug] [ThreadPool]: Databricks adapter: diagnostic-info: org.apache.hive.service.cli.HiveSQLException: Error running query: [INSUFFICIENT_PERMISSIONS] org.apache.spark.SparkSecurityException: [INSUFFICIENT_PERMISSIONS] Insufficient privileges:
+User does not have permission CREATE on CATALOG.
+	at org.apache.spark.sql.hive.thriftserver.HiveThriftServerErrors$.runningQueryError(HiveThriftServerErrors.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:693)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:41)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:99)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:571)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:422)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.spark.util.IdentityClaim$.withClaim(IdentityClaim.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:156)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:51)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:64)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:400)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:385)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:434)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.spark.SparkSecurityException: [INSUFFICIENT_PERMISSIONS] Insufficient privileges:
+User does not have permission CREATE on CATALOG.
+	at com.databricks.sql.acl.Unauthorized.throwInsufficientPermissionsError(PermissionChecker.scala:336)
+	at com.databricks.sql.acl.CheckPermissions$.com$databricks$sql$acl$CheckPermissions$$checkAndAudit(CheckPermissions.scala:2146)
+	at com.databricks.sql.acl.CheckPermissions.apply(CheckPermissions.scala:167)
+	at com.databricks.sql.acl.CheckPermissions.apply(CheckPermissions.scala:105)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$55(CheckAnalysis.scala:794)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$55$adapted(CheckAnalysis.scala:794)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:794)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:173)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:315)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$1(CheckAnalysis.scala:169)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:159)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:159)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:315)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:369)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:379)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:366)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$analyzed$1(QueryExecution.scala:179)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:348)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$4(QueryExecution.scala:421)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:926)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:421)
+	at com.databricks.util.LexicalThreadLocal$Handle.runWith(LexicalThreadLocal.scala:63)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:417)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:1038)
+	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:417)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:173)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:173)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:163)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$analyzeQuery$2(SparkExecuteStatementOperation.scala:562)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:1038)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$analyzeQuery$1(SparkExecuteStatementOperation.scala:536)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:522)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.analyzeQuery(SparkExecuteStatementOperation.scala:536)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$5(SparkExecuteStatementOperation.scala:607)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:662)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:607)
+	... 21 more
+
+[0m16:54:39.872919 [debug] [ThreadPool]: Databricks adapter: operation-id: 01ee58b8-b329-1120-a62f-b94c1ad0ac02
+[0m16:54:39.873917 [debug] [ThreadPool]: Databricks adapter: Error while running:
+macro create_schema
+[0m16:54:39.875917 [debug] [ThreadPool]: Databricks adapter: Runtime Error
+  [INSUFFICIENT_PERMISSIONS] Insufficient privileges:
+  User does not have permission CREATE on CATALOG.
+[0m16:54:39.876916 [debug] [ThreadPool]: On create_hive_metastore_landing: ROLLBACK
+[0m16:54:39.878916 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m16:54:39.879916 [debug] [ThreadPool]: On create_hive_metastore_landing: Close
+[0m16:54:40.068961 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:54:40.069962 [debug] [MainThread]: Connection 'create_hive_metastore_landing' was properly closed.
+[0m16:54:40.070961 [info ] [MainThread]: 
+[0m16:54:40.071963 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 2.73 seconds (2.73s).
+[0m16:54:40.073337 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Runtime Error
+    [INSUFFICIENT_PERMISSIONS] Insufficient privileges:
+    User does not have permission CREATE on CATALOG.
+[0m16:54:40.076348 [debug] [MainThread]: Command `dbt run` failed at 16:54:40.076348 after 4.17 seconds
+[0m16:54:40.077352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000179CF59A640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000179E4FC5B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000179E4EE5EE0>]}
+[0m16:54:40.077352 [debug] [MainThread]: Flushing usage events
+[0m16:54:40.562064 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m18:40:45.421070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002869647C400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002869AD08C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002869AD08A60>]}
+
+
+============================== 18:40:45.425069 | 5f2d1e96-596d-47aa-8ba5-7484ad45aea5 ==============================
+[0m18:40:45.425069 [info ] [MainThread]: Running with dbt=1.6.1
+[0m18:40:45.426071 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\PC\\Desktop\\dbt\\unity\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --models unity_dbt.*', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:40:46.949092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5f2d1e96-596d-47aa-8ba5-7484ad45aea5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002869ACF5DF0>]}
+[0m18:40:46.968071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5f2d1e96-596d-47aa-8ba5-7484ad45aea5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286ABD67070>]}
+[0m18:40:46.970075 [info ] [MainThread]: Registered adapter: databricks=1.6.4
+[0m18:40:46.989077 [debug] [MainThread]: checksum: efe19d9f5b93d1a98cc804fbfcdb6b3aced98b974af664946fee1cde8837deb7, vars: {}, profile: , target: , version: 1.6.1
+[0m18:40:47.109072 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m18:40:47.110072 [debug] [MainThread]: Partial parsing: updated file: unity://models\unity_dbt\one.sql
+[0m18:40:47.149113 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.unity.one' (models\unity_dbt\one.sql) depends on a node named 'teste' which was not found
+[0m18:40:47.151126 [debug] [MainThread]: Command `dbt run` failed at 18:40:47.150115 after 1.75 seconds
+[0m18:40:47.151126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002869647C400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286ABD6DFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286ABF4A8B0>]}
+[0m18:40:47.152073 [debug] [MainThread]: Flushing usage events
+[0m18:40:47.510692 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m18:41:13.623627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2BA1DC400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2BEA68C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2BEA68A60>]}
+
+
+============================== 18:41:13.627597 | 39da6ebd-ffb8-429a-96fe-bc3723a42795 ==============================
+[0m18:41:13.627597 [info ] [MainThread]: Running with dbt=1.6.1
+[0m18:41:13.628595 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\PC\\Desktop\\dbt\\unity\\logs', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run --models unity_dbt.*', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:41:14.900693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '39da6ebd-ffb8-429a-96fe-bc3723a42795', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2BEA55DF0>]}
+[0m18:41:14.913693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '39da6ebd-ffb8-429a-96fe-bc3723a42795', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2CFAC7070>]}
+[0m18:41:14.914694 [info ] [MainThread]: Registered adapter: databricks=1.6.4
+[0m18:41:14.931986 [debug] [MainThread]: checksum: efe19d9f5b93d1a98cc804fbfcdb6b3aced98b974af664946fee1cde8837deb7, vars: {}, profile: , target: , version: 1.6.1
+[0m18:41:15.032026 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:41:15.032026 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:41:15.040025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '39da6ebd-ffb8-429a-96fe-bc3723a42795', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2CFCB6EE0>]}
+[0m18:41:15.058018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '39da6ebd-ffb8-429a-96fe-bc3723a42795', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2CFBCA8B0>]}
+[0m18:41:15.059021 [info ] [MainThread]: Found 3 models, 4 tests, 0 sources, 0 exposures, 0 metrics, 471 macros, 0 groups, 0 semantic models
+[0m18:41:15.059985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '39da6ebd-ffb8-429a-96fe-bc3723a42795', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2CFBCA940>]}
+[0m18:41:15.061020 [info ] [MainThread]: 
+[0m18:41:15.063029 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m18:41:15.065030 [debug] [ThreadPool]: Acquiring new databricks connection 'list_hive_metastore'
+[0m18:41:15.066034 [debug] [ThreadPool]: Using databricks connection "list_hive_metastore"
+[0m18:41:15.067028 [debug] [ThreadPool]: On list_hive_metastore: GetSchemas(database=`hive_metastore`, schema=None)
+[0m18:41:15.068050 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:46:26.300677 [debug] [ThreadPool]: SQL status: OK in 311.2300109863281 seconds
+[0m18:46:26.309665 [debug] [ThreadPool]: On list_hive_metastore: Close
+[0m18:46:26.484228 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_hive_metastore, now create_hive_metastore_landing)
+[0m18:46:26.485228 [debug] [ThreadPool]: Creating schema "database: "hive_metastore"
+schema: "landing"
+"
+[0m18:46:26.500228 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m18:46:26.500228 [debug] [ThreadPool]: Using databricks connection "create_hive_metastore_landing"
+[0m18:46:26.501228 [debug] [ThreadPool]: On create_hive_metastore_landing: /* {"app": "dbt", "dbt_version": "1.6.1", "dbt_databricks_version": "1.6.4", "databricks_sql_connector_version": "2.9.3", "profile_name": "unity", "target_name": "dev", "connection_name": "create_hive_metastore_landing"} */
+create schema if not exists `hive_metastore`.`landing`
+  
+[0m18:46:26.501228 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:46:27.637188 [debug] [ThreadPool]: Databricks adapter: Error while running:
+/* {"app": "dbt", "dbt_version": "1.6.1", "dbt_databricks_version": "1.6.4", "databricks_sql_connector_version": "2.9.3", "profile_name": "unity", "target_name": "dev", "connection_name": "create_hive_metastore_landing"} */
+create schema if not exists `hive_metastore`.`landing`
+  
+[0m18:46:27.640194 [debug] [ThreadPool]: Databricks adapter: <class 'databricks.sql.exc.ServerOperationError'>: [INSUFFICIENT_PERMISSIONS] Insufficient privileges:
+User does not have permission CREATE on CATALOG.
+[0m18:46:27.643144 [debug] [ThreadPool]: Databricks adapter: diagnostic-info: org.apache.hive.service.cli.HiveSQLException: Error running query: [INSUFFICIENT_PERMISSIONS] org.apache.spark.SparkSecurityException: [INSUFFICIENT_PERMISSIONS] Insufficient privileges:
+User does not have permission CREATE on CATALOG.
+	at org.apache.spark.sql.hive.thriftserver.HiveThriftServerErrors$.runningQueryError(HiveThriftServerErrors.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:693)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:41)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:99)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:571)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:422)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.spark.util.IdentityClaim$.withClaim(IdentityClaim.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:156)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:51)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:64)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:400)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:385)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:434)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.spark.SparkSecurityException: [INSUFFICIENT_PERMISSIONS] Insufficient privileges:
+User does not have permission CREATE on CATALOG.
+	at com.databricks.sql.acl.Unauthorized.throwInsufficientPermissionsError(PermissionChecker.scala:336)
+	at com.databricks.sql.acl.CheckPermissions$.com$databricks$sql$acl$CheckPermissions$$checkAndAudit(CheckPermissions.scala:2146)
+	at com.databricks.sql.acl.CheckPermissions.apply(CheckPermissions.scala:167)
+	at com.databricks.sql.acl.CheckPermissions.apply(CheckPermissions.scala:105)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$55(CheckAnalysis.scala:794)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$55$adapted(CheckAnalysis.scala:794)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:794)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:173)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:315)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis$1(CheckAnalysis.scala:169)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:159)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:159)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:315)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:369)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:379)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:366)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$analyzed$1(QueryExecution.scala:179)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:80)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:348)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$4(QueryExecution.scala:421)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:926)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:421)
+	at com.databricks.util.LexicalThreadLocal$Handle.runWith(LexicalThreadLocal.scala:63)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:417)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:1038)
+	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:417)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:173)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:173)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:163)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$analyzeQuery$2(SparkExecuteStatementOperation.scala:562)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:1038)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$analyzeQuery$1(SparkExecuteStatementOperation.scala:536)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:522)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.analyzeQuery(SparkExecuteStatementOperation.scala:536)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$5(SparkExecuteStatementOperation.scala:607)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:662)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:607)
+	... 21 more
+
+[0m18:46:27.646173 [debug] [ThreadPool]: Databricks adapter: operation-id: 01ee58c8-513c-1c33-96a3-d246cb640ebc
+[0m18:46:27.648132 [debug] [ThreadPool]: Databricks adapter: Error while running:
+macro create_schema
+[0m18:46:27.649176 [debug] [ThreadPool]: Databricks adapter: Runtime Error
+  [INSUFFICIENT_PERMISSIONS] Insufficient privileges:
+  User does not have permission CREATE on CATALOG.
+[0m18:46:27.650170 [debug] [ThreadPool]: On create_hive_metastore_landing: ROLLBACK
+[0m18:46:27.652162 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m18:46:27.654169 [debug] [ThreadPool]: On create_hive_metastore_landing: Close
+[0m18:46:27.825529 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:46:27.826548 [debug] [MainThread]: Connection 'create_hive_metastore_landing' was properly closed.
+[0m18:46:27.827566 [info ] [MainThread]: 
+[0m18:46:27.828530 [info ] [MainThread]: Finished running  in 0 hours 5 minutes and 12.76 seconds (312.76s).
+[0m18:46:27.829533 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Runtime Error
+    [INSUFFICIENT_PERMISSIONS] Insufficient privileges:
+    User does not have permission CREATE on CATALOG.
+[0m18:46:27.831568 [debug] [MainThread]: Command `dbt run` failed at 18:46:27.831568 after 314.22 seconds
+[0m18:46:27.832566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2BA1DC400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2CFBCA880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2CFBCA760>]}
+[0m18:46:27.832566 [debug] [MainThread]: Flushing usage events
+[0m18:46:28.197276 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.

@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: teste
+    description: One record per order
+
