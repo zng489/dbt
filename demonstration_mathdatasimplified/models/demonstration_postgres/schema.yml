@@ -1,0 +1,23 @@
+version: 2
+# resources of data for ingestion
+
+sources:
+  - name: source_parameter
+    description: This my new one dbt creation from database running
+
+    database: postgres
+    #database: postgres
+
+    schema: public
+    #schema: public
+
+    tables:
+      - name: dragon
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+          - name: dps
+            tests:
+              - not_null
