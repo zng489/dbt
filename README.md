@@ -19,6 +19,7 @@ dbt debug
 
 
 4- 
+dbt test is just a really test!!
 dbt test --models <folder> users.*<subfolder>
 dbt test --models users.*
 
@@ -29,6 +30,9 @@ dbt seed -s uf_mun
 5-
 dbt run --models <folder> users.*<subfolder>
 dbt run --models users.*
+
+dbt docs generate
+dbt docs serve
 
 6-
 models:
