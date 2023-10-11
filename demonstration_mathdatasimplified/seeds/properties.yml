@@ -1,0 +1,9 @@
+version: 2
+
+seeds:
+  - name: df_0
+#    columns:
+#      - name: country_code
+#        tests:
+#        - not_null
+  - name: df_1

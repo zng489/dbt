@@ -39,4 +39,10 @@ models:
       #schema: naming a new one schema
       schema: schema_test
       materialized: view
+    
+    staging:
+      materialized: view
+
+    incremental:
+      materialized: view
 

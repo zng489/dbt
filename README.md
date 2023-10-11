@@ -23,6 +23,8 @@ dbt test is just a really test!!
 dbt test --models <folder> users.*<subfolder>
 dbt test --models users.*
 
+
+dbt run --select fiel
 For csv file
 
 dbt seed -s uf_mun
@@ -55,7 +57,7 @@ snapshot-paths: ["snapshots"]
 seed-paths is linking with "seeds" folder;
 for example seed-paths: ["data"], seed-path with "data" folder;
 
-
+dbt run --full-refresh --select incremental
 8-
 test_dbt:
   outputs:
@@ -117,6 +119,8 @@ seeds:
       - name: country_code
         tests:
         - not_null
+
+https://www.youtube.com/watch?v=VRTx97llL-A&ab_channel=SleekData
 links
 tops
 https://www.linkedin.com/pulse/come%C3%A7ando-com-o-dbt-data-build-tool-asafe-felipe/?originalSubdomain=pt

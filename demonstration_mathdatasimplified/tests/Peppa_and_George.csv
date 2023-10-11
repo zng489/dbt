@@ -1,0 +1,7 @@
+date,name,sales,status
+Jan. 2023,Peppa,4,actual
+Jan. 2023,George,4,actual
+Feb. 2023,Peppa,8,actual
+Feb. 2023,George,2,actual
+Mar. 2023,Peppa,6,estimate
+Mar. 2023,George,3,estimate
