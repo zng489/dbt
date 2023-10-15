@@ -45,4 +45,3 @@ models:
 
     incremental:
       materialized: view
-

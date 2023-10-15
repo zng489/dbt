@@ -120,6 +120,12 @@ seeds:
         tests:
         - not_null
 
+
+0.19
+
+C:\Users\PC\Desktop\tmp\dbt\demonstration_mathdatasimplified\packages.yml
+dbt deps
+
 https://www.youtube.com/watch?v=VRTx97llL-A&ab_channel=SleekData
 links
 tops

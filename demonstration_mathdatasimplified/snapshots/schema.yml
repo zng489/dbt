@@ -1,0 +1,15 @@
+version: 2
+# resources of data for ingestion
+
+sources:
+  - name: source
+    description: This my new one dbt creation from database running
+
+    database: postgres
+    #database: postgres
+
+    schema: postgres
+    #schema: public
+
+    tables: 
+      - name: postal-code-germany
