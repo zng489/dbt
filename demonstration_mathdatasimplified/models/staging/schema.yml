@@ -15,3 +15,5 @@ sources:
       - name: postal-code-germany
 
       - name: dim_staging_model
+
+      - name: incremental_one

@@ -123,7 +123,7 @@ seeds:
 
 https://www.youtube.com/watch?v=z95AxLvKKdc&ab_channel=datajosh
 0.19
-
+1.3.2
 C:\Users\PC\Desktop\tmp\dbt\demonstration_mathdatasimplified\packages.yml
 dbt deps
 
