@@ -3,11 +3,11 @@
     
 )}}
 
-select * from {{ source('source', 'postal-code-germany') }}
+select * from {{ source('source', 'dim_staging_model') }}
 --where 1 = 1
 {% if is_incremental() %}
     --AND code >= (select max(code) from {{this}})
-    where lon = (select max(lon) from {{ this }})
+    where code > (select min(code) from {{ this }})
 {% endif %}
 
 --tags = ['tag'],

@@ -121,6 +121,7 @@ seeds:
         - not_null
 
 
+https://www.youtube.com/watch?v=z95AxLvKKdc&ab_channel=datajosh
 0.19
 
 C:\Users\PC\Desktop\tmp\dbt\demonstration_mathdatasimplified\packages.yml
