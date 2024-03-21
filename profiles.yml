@@ -1,127 +1,110 @@
-test_dbt:
+demonstration_mathdatasimplified:
   outputs:
-
     dev:
+      dbname:
+      - dbname
+      host:
+      - host
+      pass:
+      - dev_password
+      port:
+      - port
+      schema:
+      - dev_schema
+      threads:
+      - 1 or more
       type: postgres
-      threads: 1 #[1 or more]
-      host: localhost #[host]
-      port: 5433 #[port]
-      user: postgres #[dev_username]
-      pass: '123' #[dev_password]
-      dbname: postgres #[dbname]
-      schema: postgres #[dev_schema]
-
+      user:
+      - dev_username
     prod:
+      dbname:
+      - dbname
+      host:
+      - host
+      pass:
+      - prod_password
+      port:
+      - port
+      schema:
+      - prod_schema
+      threads:
+      - 1 or more
       type: postgres
-      threads: 1 #[1 or more]
-      host: localhost #[host]
-      port: 5433 #[port]
-      user: postgres #[dev_username]
-      pass: '123' #[dev_password]
-      dbname: postgres #[dbname]
-      schema: postgres #[dev_schema]
-
+      user:
+      - prod_username
   target: dev
-
-sql_jinja:
-  outputs:
-
-    dev:
-      type: postgres
-      threads: 1 #[1 or more]
-      host: localhost #[host]
-      port: 5433 #[port]
-      user: postgres #[dev_username]
-      pass: '123' #[dev_password]
-      dbname: postgres #[dbname]
-      schema: postgres #[dev_schema]
-
-    prod:
-      type: postgres
-      threads: 1 #[1 or more]
-      host: localhost #[host]
-      port: 5433 #[port]
-      user: postgres #[dev_username]
-      pass: '123' #[dev_password]
-      dbname: postgres #[dbname]
-      schema: postgres #[dev_schema]
-
-  target: dev
-
-
 rais:
   outputs:
-
     dev:
+      dbname: postgres
+      host: localhost
+      pass: '123'
+      port: 5433
+      schema: postgres
+      threads: 1
       type: postgres
-      threads: 1 #[1 or more]
-      host: localhost #[host]
-      port: 5433 #[port]
-      user: postgres #[dev_username]
-      pass: '123' #[dev_password]
-      dbname: postgres #[dbname]
-      schema: postgres #[dev_schema]
-
+      user: postgres
     prod:
+      dbname: postgres
+      host: localhost
+      pass: '123'
+      port: 5433
+      schema: postgres
+      threads: 1
       type: postgres
-      threads: 1 #[1 or more]
-      host: localhost #[host]
-      port: 5433 #[port]
-      user: postgres #[dev_username]
-      pass: '123' #[dev_password]
-      dbname: postgres #[dbname]
-      schema: postgres #[dev_schema]
-
+      user: postgres
   target: dev
-
-  target: dev
-
-demonstration_mathdatasimplified:
+sql_jinja:
   outputs:
-
     dev:
+      dbname: postgres
+      host: localhost
+      pass: '123'
+      port: 5433
+      schema: postgres
+      threads: 1
       type: postgres
-      threads: [1 or more]
-      host: [host]
-      port: [port]
-      user: [dev_username]
-      pass: [dev_password]
-      dbname: [dbname]
-      schema: [dev_schema]
-
+      user: postgres
     prod:
+      dbname: postgres
+      host: localhost
+      pass: '123'
+      port: 5433
+      schema: postgres
+      threads: 1
       type: postgres
-      threads: [1 or more]
-      host: [host]
-      port: [port]
-      user: [prod_username]
-      pass: [prod_password]
-      dbname: [dbname]
-      schema: [prod_schema]
-
+      user: postgres
   target: dev
-
-demonstration_mathdatasimplified:
+test_dbt:
   outputs:
-
     dev:
+      dbname: postgres
+      host: localhost
+      pass: '123'
+      port: 5433
+      schema: postgres
+      threads: 1
       type: postgres
-      threads: [1 or more]
-      host: [host]
-      port: [port]
-      user: [dev_username]
-      pass: [dev_password]
-      dbname: [dbname]
-      schema: [dev_schema]
-
+      user: postgres
     prod:
+      dbname: postgres
+      host: localhost
+      pass: '123'
+      port: 5433
+      schema: postgres
+      threads: 1
       type: postgres
-      threads: [1 or more]
-      host: [host]
-      port: [port]
-      user: [prod_username]
-      pass: [prod_password]
-      dbname: [dbname]
-      schema: [prod_schema]
-
+      user: postgres
+  target: dev
+version_project_20_3_2024:
+  outputs:
+    dev:
+      dbname: q
+      host: dbt_20_3_2024
+      pass: '123'
+      port: 5432
+      schema: w
+      threads: 1
+      type: postgres
+      user: deb_dbt_20_3_2024
   target: dev
