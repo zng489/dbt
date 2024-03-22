@@ -32,6 +32,20 @@ For each item there are one specific way to get data inside data warehouse
 
 >> example_v1_file.sql is the table name
 
+5
+-- {{ config(materialized='table') }}
+{{ config(materialized='view') }}
+select * FROM {{ source('source', 'stored_procedure_prac') }}
+
+
+To view the data, you have to get it and configure the properties in the schema.yml file
+
+  To fix this, change the name of one of these resources:
+  - model.version_21_3_2024.reading_from_postgres (models\ref\reading_from_postgres.sql)
+  - model.version_21_3_2024.reading_from_postgres (models\example_v1\reading_from_postgres.sql)
+
+dbt run --models ref.example_ref_v1
+
 5-
 >> dbt test --models example_v1
 dbt test --models <folder> users.*<subfolder>
