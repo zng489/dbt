@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table DBT_DB.PUBLIC.consum_upgrade (DAT_REGISTRO date,DSC_RECLAMACAO text,cpf_formatado text,FLG_RECLAMACAO_CONSUMERISTA integer)
+  ;
+    -- dbt seed --
+    
+            insert into DBT_DB.PUBLIC.consum_upgrade (DAT_REGISTRO, DSC_RECLAMACAO, cpf_formatado, FLG_RECLAMACAO_CONSUMERISTA) values
+            (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s)
+        
+
+;
+  

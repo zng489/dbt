@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "DBT_DB"."PUBLIC"."CONSUMERISTA";
+    -- dbt seed --
+    
+            insert into DBT_DB.PUBLIC.consumerista (DAT_REGISTRO, DSC_RECLAMACAO, cpf_formatado, FLG_RECLAMACAO_CONSUMERISTA) values
+            (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s)
+        
+
+;
+  

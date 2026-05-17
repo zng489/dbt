@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: external
+    description: Tabelas externas criadas fora do dbt
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: RECLAMACOES
+        description: Tabela externa criada manualmente no Snowflake

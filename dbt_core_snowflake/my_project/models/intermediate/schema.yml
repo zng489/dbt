@@ -1,0 +1,27 @@
+
+version: 2
+
+models:
+  - name: int_consumerista_transformed
+    description: Modelo intermediário que transforma os dados do seed consumerista
+    columns:
+      - name: DAT_REGISTRO
+        description: Data do registro da reclamação
+        tests:
+          - not_null
+      - name: DSC_RECLAMACAO
+        description: Descrição da reclamação
+        tests:
+          - not_null
+      - name: cpf_formatado
+        description: CPF do consumidor (formatado)
+        tests:
+          - not_null
+      - name: FLG_RECLAMACAO_CONSUMERISTA
+        description: Flag indicando se é reclamação consumerista
+        tests:
+          - not_null
+      - name: dsc_reclamacao_maiuscula
+        description: Descrição da reclamação em maiúsculas
+      - name: tamanho_cpf
+        description: Tamanho do campo cpf_formatado
